@@ -1,38 +1,38 @@
-<!doctype html>
+<!DOCTYPE html> <!-- Doctype estava declarado de forma minuscula-->
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link real="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/style.css">  <!-- Declarado de forma incorreta-->
         <title>Instagram</title>
     </head>
     <body>
         <div class="instagram-wrapper">
             <div class="instagram-phone">
-                <img src="./Instagram_Story.jpg__466810_.png"alt="celular">
-            </div>
+                <img src="./Instagram_Story.jpg__466810_.png"alt="celular"> <!-- Imagem diferenta do proposto poe-->
+            </div>                                                                                                                  <!-- Com isso os parametros que ela usa náo valem-->
             <div class="instagram-continue">
                 <div class="group">
-                    <img src="./instagram logo.png" class="instagram-logo" alt="instagram logo">
-                    <div class="profile-photo">
+                    <img src="./instagram logo.png" class="instagram-logo" alt="instagram logo"> <!-- Logo diferenta do proposto poe-->
+                    <div class="profile-photo">                                                                                                     <!-- Com isso os parametros que ela usa náo valem-->
                         <img src="./fernanda.jpg" alt="foto do perfil">
                     </div>
-                    <a href="#" class="instagram-login">continue como paulafernandadasilvachaves</a>
-                    <a href="#" class="instagram-logout">remover conta</a>
+                    <a href="#" class="instagram-login">Continue como paulafernandadasilvachaves</a>
+                    <a href="#" class="instagram-logout">Remover conta</a>
                 </div>
                 <div class="group">
                     <p class="not-account">Não é paulafernandadasilvachaves?</p>
-                    <p class="notaccount">
+                    <p class="not-account"> <!-- Classe deve ser declarada de forma igual a de cima-->
                         <span class="link-blue">Alternar contas</span>
                         ou
-                        <span class="link-blue"><Inscreva-se></span> 
-                    </p>
+                        <span class="link-blue">Inscreva-se</span> <!-- Span declarado de forma errada.-->
+                    </p> 
                 </div>
-                <div class="get-the-app">
-                    <p class="get-app">Baixe o aplicativo</p>
-                    <div class="donwload">
-                        <a href="#" class="app-donwload"></a>
-                        <a href="#" class="app-donwload"></a>
+                <div class="get-the-app"> <!-- Ambos tem  a mesma classe-->
+                    <p class="get-the-app">Baixe o aplicativo</p>
+                    <div class="download">
+                        <a href="#" class="app-download"></a>  <!-- Download Escrito errado-->
+                        <a href="#" class="app-download"></a>  <!-- Download Escrito errado-->
                     </div>
                 </div>
             </div>

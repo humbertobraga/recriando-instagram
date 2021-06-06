@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;                 /*Tudo Okay*/
     text-decoration: none;
     font-family: sans-serif;
     font-size: 14px;
@@ -11,7 +11,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243, 243, 243);
+    background-color: whitesmoke;  /*Tudo Okay, só a cor que estava errada*/  
     margin: 0;
     padding: 0;
     display: flex;
@@ -21,7 +21,7 @@ body {
 .instagram-wrapper {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: start;  /*Tudo Okay*/
     width: 60%;
     height: 100vh;
 }
@@ -29,17 +29,17 @@ body {
 .instagram-phone {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /*Tudo okay*/
     width: 50%;
 }
 
-.instagram-phone img {
+.instagram-phone img {    /*Tudo Okay*/
     height: 50rem;
 }
 .instagram-continue {
     display: flex;
     align-items: center; /* horizontal */
-    justify-content: space-around; /* vertical */
+    justify-content: space-around; /* vertical */ /*Tudo okay*/
     flex-direction: column;
     width: 50%;
     min-height: 34rem;
@@ -49,29 +49,112 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    background-color: #fff;
+    flex-direction: column; /*Tudo okay*/
+    background-color: #ffffff;
     width: 100%;
     padding: 1.3rem 0;
     border: 1px solid lightgray;
 }
 
 .group:nth-child(1) {
-    min-width: 19rem;
+    min-width: 19rem;   /*Tudo okay*/
 }
 
 .instagram-logo {
-    height: 3rem;
+    height: 3rem;    /*Tudo okay*/
 }
 
 .profile-photo {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; /*Tudo okay*/
     border-radius: 50%;
     overflow: hidden;
 }
 
 .profile-photo img {
-    height: 6rem;
+    height: 50%;
 }
+
+.instagram-login {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+
+.instagram-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+.link-blue {
+    color: #0095f6;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.donwload {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./162-1628584_apple-store-button-just-do-it-nike-hd.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./google\ play.png');
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    body {
+        background-color: #ffffff;
+    }
+    .instagram-wrapper {
+        width: 90%;
+    }
+    
+    .instagram-phone {
+        display: none;
+    }
+    
+    .instagram-continue {
+        width: 100%;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
+}
+
+
